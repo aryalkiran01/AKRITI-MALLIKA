@@ -21,7 +21,7 @@ const Navbar = () => {
         <Link to="/" className="flex items-center gap-2">
           <div className="leading-tight">
             <span className="font-display text-xl md:text-2xl text-primary-foreground tracking-wider">
-              Akriti SRP Rokect JV
+              Akriti SRP Rocket JV
             </span>
           </div>
         </Link>

@@ -9,7 +9,7 @@ const Footer = () => {
           <div className="md:col-span-1">
             <div className="flex items-center gap-2 mb-4">
               <span className="font-display text-2xl tracking-wider">
-                Akriti SRP Rokect JV
+                Akriti SRP Rocket JV
               </span>
             </div>
             <p className="text-primary-foreground/70 text-sm leading-relaxed">
@@ -79,7 +79,7 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-primary-foreground/10 mt-12 pt-6 text-center text-sm text-primary-foreground/50">
-          © {new Date().getFullYear()} Akriti SRP Rokect JV. All rights
+          © {new Date().getFullYear()} Akriti SRP Rocket JV. All rights
           reserved.
         </div>
       </div>

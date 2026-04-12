@@ -23,7 +23,7 @@ const About = () => {
               Building Excellence Since 2018
             </h2>
             <p className="text-muted-foreground leading-relaxed mb-4">
-              Akriti SRP Rokect JV is a renowned construction company based in
+              Akriti SRP Rocket JV is a renowned construction company based in
               Gulmi, Lumbini Province, Nepal. Established as a joint venture, we
               specialize in road construction, bridge building, and large-scale
               infrastructure projects across western Nepal.
@@ -44,7 +44,7 @@ const About = () => {
           <div className="rounded-lg overflow-hidden shadow-2xl">
             <img
               src={aboutImage}
-              alt="Akriti SRP Rokect JV Office"
+              alt="Akriti SRP Rocket JV Office"
               className="w-full h-full object-cover"
               loading="lazy"
               width={1280}

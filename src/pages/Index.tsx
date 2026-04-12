@@ -36,7 +36,7 @@ const testimonials = [
   {
     name: "Ram Bahadur Thapa",
     role: "District Engineer, Gulmi",
-    text: "Akriti SRP Rokect JV has consistently delivered high-quality road construction projects on time. Their commitment to excellence is unmatched.",
+    text: "Akriti SRP Rocket JV has consistently delivered high-quality road construction projects on time. Their commitment to excellence is unmatched.",
   },
   {
     name: "Sita Sharma",
@@ -71,7 +71,7 @@ const Index = () => {
             className="font-display text-5xl md:text-7xl lg:text-8xl text-primary-foreground mb-6 animate-fade-in-up"
             style={{ animationDelay: "0.1s" }}
           >
-            Akriti SRP Rokect JV
+            Akriti SRP Rocket JV
           </h1>
           <p
             className="text-primary-foreground/80 text-lg md:text-xl max-w-2xl mx-auto mb-8 animate-fade-in-up"

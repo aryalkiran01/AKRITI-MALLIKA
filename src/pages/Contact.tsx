@@ -122,7 +122,7 @@ const Contact = () => {
             {/* Google Maps Embed */}
             <div className="rounded-lg overflow-hidden border border-border h-64">
               <iframe
-                title="Akriti SRP Rokect JV Location"
+                title="Akriti SRP Rocket JV Location"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d112877.79843!2d83.2!3d28.1!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3997e0d1c1d1e6a7%3A0x1234567890abcdef!2sGulmi%2C%20Nepal!5e0!3m2!1sen!2snp!4v1700000000000"
                 width="100%"
                 height="100%"
