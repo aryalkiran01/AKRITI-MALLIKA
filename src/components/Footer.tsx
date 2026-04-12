@@ -14,7 +14,7 @@ const Footer = () => {
             </div>
             <p className="text-primary-foreground/70 text-sm leading-relaxed">
               Building Nepal's infrastructure with excellence, integrity, and
-              dedication since 2015.
+              dedication since 2018.
             </p>
           </div>
 

@@ -1,6 +1,5 @@
 import { Target, Eye, Shield, Users } from "lucide-react";
-import aboutImage from "@/assets/about-office.jpg";
-
+import aboutImage from "@/assets/about.png";
 const About = () => {
   return (
     <div className="min-h-screen pt-20">
@@ -21,7 +20,7 @@ const About = () => {
         <div className="container mx-auto grid md:grid-cols-2 gap-12 items-center">
           <div>
             <h2 className="font-display text-4xl text-foreground mb-6">
-              Building Excellence Since 2015
+              Building Excellence Since 2018
             </h2>
             <p className="text-muted-foreground leading-relaxed mb-4">
               Akriti SRP Rokect JV is a renowned construction company based in
@@ -30,8 +29,8 @@ const About = () => {
               infrastructure projects across western Nepal.
             </p>
             <p className="text-muted-foreground leading-relaxed mb-4">
-              With a team of over 200 experienced engineers, technicians, and
-              skilled workers, we have successfully delivered 50+ projects
+              With a team of over 50 experienced engineers, technicians, and
+              skilled workers, we have successfully delivered 5+ projects
               including highways, rural roads, and bridges. Our commitment to
               quality, safety, and timely delivery has earned us the trust of
               government agencies and communities alike.

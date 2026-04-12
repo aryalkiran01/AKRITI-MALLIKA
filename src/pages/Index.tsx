@@ -6,7 +6,7 @@ import projectRoad from "@/assets/project-road.jpg";
 
 const stats = [
   { value: "5+", label: "Projects Completed", icon: Trophy },
-  { value: "4+", label: "Years Experience", icon: Building2 },
+  { value: "8+", label: "Years Experience", icon: Building2 },
   { value: "50+", label: "Team Members", icon: Mountain },
   { value: "5", label: "Districts Served", icon: Route },
 ];
