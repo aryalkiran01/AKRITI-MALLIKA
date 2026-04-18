@@ -3,6 +3,10 @@ import { ChevronUp, MessageCircle } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import HeroSection from "@/components/HeroSection";
 import Timeline from "@/components/Timeline";
+import img from "../assets/howitwork1.png";
+import img2 from "../assets/img2.png";
+import img3 from "../assets/img3.png";
+import img4 from "../assets/img4.png";
 
 const HowWeWork = () => {
   const [showScrollTop, setShowScrollTop] = useState(false);
@@ -26,32 +30,66 @@ const HowWeWork = () => {
       title: "Consult",
       description:
         "We begin with a comprehensive consultation to understand your project requirements, site conditions, and objectives. Our expert team assesses challenges and proposes optimal solutions.",
-      image:
-        "https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&h=600&fit=crop",
+      image: img,
     },
     {
       step: 2,
       title: "Contract",
       description:
         "Once we've agreed on the scope and vision, we finalize detailed contracts outlining timelines, costs, and quality standards. Transparency and clear communication ensure mutual understanding.",
-      image:
-        "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&h=600&fit=crop",
+      image: img2,
     },
     {
       step: 3,
       title: "Construction",
       description:
         "Our skilled teams execute the project with precision using modern equipment and proven methodologies. Regular inspections and quality checks ensure every phase meets our high standards.",
-      image:
-        "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=800&h=600&fit=crop",
+      image: img3,
     },
     {
       step: 4,
       title: "Commissioning",
       description:
         "Upon completion, we conduct thorough testing and final inspections. Handover includes documentation, training, and post-completion support for long-term success.",
-      image:
-        "https://images.unsplash.com/photo-1581092165854-40129fb383b3?w=800&h=600&fit=crop",
+      image: img4,
+    },
+  ];
+  const packages = [
+    {
+      title: "Basic",
+      features: [
+        "Survey & Site Inspection",
+        "Earthwork & Excavation",
+        "Subgrade Preparation",
+        "Basic Drainage",
+        "Gravel Road Construction",
+        "Compaction & Leveling",
+      ],
+    },
+    {
+      title: "Standard",
+      features: [
+        "Detailed Design & Planning",
+        "Earthwork & Subgrade",
+        "Base & Sub-base Layers",
+        "Asphalt / Bitumen Surfacing",
+        "Drainage System",
+        "Road Marking",
+        "Quality Testing",
+      ],
+    },
+    {
+      title: "Premium",
+      features: [
+        "Full Project Planning & Design",
+        "Earthwork + Soil Stabilization",
+        "Concrete / Asphalt Road",
+        "Bridge / Culvert Construction",
+        "Advanced Drainage System",
+        "Street Lighting",
+        "Safety & Signage",
+        "Maintenance Support",
+      ],
     },
   ];
 
@@ -64,7 +102,7 @@ const HowWeWork = () => {
           { label: "Home", path: "/" },
           { label: "How We Work", path: "/how-we-work" },
         ]}
-        backgroundImage="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=1600&h=900&fit=crop"
+        backgroundImage="https://img.freepik.com/free-photo/portrait-engineer-job-site-work-hours_23-2151589654.jpg?t=st=1744083045~exp=1744086645~hmac=b9e26dfb0b929eb13a5815a0d72c84b13e20dfcc78d18f16645b14c7ef7fdcab&w=996"
       />
 
       {/* Intro Section */}
@@ -83,7 +121,8 @@ const HowWeWork = () => {
             <p className="text-muted-foreground text-lg leading-relaxed">
               At Akriti SRP Rocket JV, we follow a structured and transparent
               process to deliver exceptional construction projects. Our approach
-              ensures quality, efficiency, and client satisfaction at every step.
+              ensures quality, efficiency, and client satisfaction at every
+              step.
             </p>
           </motion.div>
         </div>
@@ -92,6 +131,81 @@ const HowWeWork = () => {
       {/* Timeline Section */}
       <Timeline steps={timelineSteps} />
 
+      {/* Infrastructure Packages Section */}
+      <section className="section-padding bg-background">
+        <div className="container mx-auto">
+          <motion.div
+            className="text-center mb-16"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+          >
+            <h2 className="text-4xl md:text-5xl font-bold text-foreground">
+              Infrastructure Packages
+            </h2>
+            <p className="text-muted-foreground mt-4 max-w-xl mx-auto">
+              Choose the right package based on your project scale and
+              requirements.
+            </p>
+            <div className="w-20 h-1 bg-blue-600 mx-auto mt-6 rounded-full" />
+          </motion.div>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            {packages.map((pkg, index) => (
+              <motion.div
+                key={index}
+                whileHover={{ y: -10 }}
+                className={`rounded-2xl p-8 border transition-all duration-300 bg-white shadow-sm hover:shadow-xl
+          ${
+            pkg.title === "Premium"
+              ? "border-blue-600 shadow-lg scale-105"
+              : "border-border"
+          }`}
+              >
+                {/* Title */}
+                <h3
+                  className={`text-2xl font-bold mb-6 text-center ${
+                    pkg.title === "Premium"
+                      ? "text-blue-600"
+                      : "text-foreground"
+                  }`}
+                >
+                  {pkg.title}
+                </h3>
+
+                {/* Divider */}
+                <div className="h-[2px] bg-border mb-6" />
+
+                {/* Features */}
+                <ul className="space-y-3">
+                  {pkg.features.map((item, i) => (
+                    <li
+                      key={i}
+                      className="flex items-start gap-3 text-muted-foreground"
+                    >
+                      <span className="text-blue-600 mt-1">✔</span>
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+
+                {/* CTA */}
+                <button
+                  className={`mt-8 w-full py-3 rounded-lg font-semibold transition
+            ${
+              pkg.title === "Premium"
+                ? "bg-blue-600 text-white hover:bg-blue-700"
+                : "bg-muted hover:bg-muted/70"
+            }`}
+                >
+                  Get Started
+                </button>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
       {/* Floating Buttons */}
       <AnimatePresence>
         {showScrollTop && (
@@ -110,7 +224,7 @@ const HowWeWork = () => {
       </AnimatePresence>
 
       <motion.button
-        className="fixed bottom-8 left-8 w-14 h-14 rounded-full bg-primary text-primary-foreground shadow-lg hover:shadow-xl transition-shadow flex items-center justify-center z-40"
+        className="fixed bottom-8 left-8 w-14 h-14 rounded-full bg-primary/80 text-white shadow-lg hover:bg-primary transition flex items-center justify-center z-40"
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.95 }}
       >

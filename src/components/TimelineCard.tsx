@@ -28,11 +28,11 @@ const TimelineCard = ({
       viewport={{ once: true }}
     >
       {/* Timeline Center Line */}
-      <div className="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-gradient-to-b from-secondary to-secondary/20 hidden lg:block" />
+      {/* <div className="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-gradient-to-b from-secondary to-secondary/20 hidden lg:block" /> */}
 
       {/* Step Circle */}
       <motion.div
-        className="relative flex-shrink-0 w-20 h-20 rounded-full bg-secondary flex items-center justify-center text-primary font-display text-2xl font-bold shadow-lg z-10"
+        className="relative flex-shrink-0 w-20 h-20 rounded-full bg-primary flex items-center justify-center text-white font-display text-2xl font-bold shadow-lg z-10"
         whileHover={{ scale: 1.1 }}
         transition={{ type: "spring", stiffness: 300 }}
       >
@@ -44,11 +44,11 @@ const TimelineCard = ({
         className="flex-1 bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300 group"
         whileHover={{ y: -10 }}
       >
-        <div className="relative h-48 overflow-hidden">
+        <div className="relative overflow-hidden">
           <motion.img
             src={image}
             alt={title}
-            className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+            className="w-full h-auto object-cover group-hover:scale-110 transition-transform duration-500"
           />
         </div>
         <div className="p-8">

@@ -26,7 +26,6 @@ const Timeline = ({ steps }: TimelineProps) => {
           <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground mb-4">
             Our Construction Process
           </h2>
-          <div className="w-20 h-1 bg-gradient-to-r from-secondary to-secondary/50 mx-auto" />
         </motion.div>
 
         <div className="max-w-4xl mx-auto">
