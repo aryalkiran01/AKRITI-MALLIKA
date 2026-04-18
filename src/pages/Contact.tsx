@@ -27,12 +27,12 @@ const Contact = () => {
 
   return (
     <div className="min-h-screen pt-20">
-      <section className="relative h-[40vh] flex items-center justify-center bg-primary">
+      <section className="relative h-[20vh] flex items-center justify-center bg-gray-100 dark:bg-gray-900">
         <div className="text-center px-4">
           <p className="text-secondary font-semibold tracking-widest uppercase text-sm mb-2">
             Get in Touch
           </p>
-          <h1 className="font-display text-5xl md:text-6xl text-primary-foreground">
+          <h1 className="font-display text-5xl md:text-6xl text-gray-900 dark:text-white">
             Contact Us
           </h1>
         </div>
@@ -113,7 +113,7 @@ const Contact = () => {
                 <div>
                   <p className="font-semibold text-foreground">Email</p>
                   <p className="text-muted-foreground">
-                    info@aakritisrp.com.np
+                    aakritisrp.com.np@gmail.com
                   </p>
                 </div>
               </div>

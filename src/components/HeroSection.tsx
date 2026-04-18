@@ -15,9 +15,11 @@ const HeroSection = ({
 }: HeroSectionProps) => {
   return (
     <section
-      className="relative h-[50vh] md:h-[60vh] flex items-center justify-center bg-primary overflow-hidden pt-20"
+      className="relative min-h-[40vh] md:min-h-[50vh] flex items-center justify-center bg-primary overflow-hidden py-16"
       style={{
-        backgroundImage: backgroundImage ? `url(${backgroundImage})` : undefined,
+        backgroundImage: backgroundImage
+          ? `url(${backgroundImage})`
+          : undefined,
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
